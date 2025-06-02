@@ -1,0 +1,7 @@
+1 - Se tentarmos ler um arquivo que não existe, o programa lançará uma exceção FileNotFoundException, que é uma subclasse de IOException. Isso interrompe a execução, a menos que seja tratada com um bloco try-catch
+
+
+2 - Para melhorar o código, podemos usar try-with-resources, o que garante o fechamento automático dos recursos como FileWriter, FileReader e BufferedReader, mesmo que ocorra uma exceção. Isso evita vazamentos de recursos e torna o código mais limpo.
+
+
+3 - Quanto a salvar e ler com formatos diferentes, como JSON ou CSV, poderíamos utilizar bibliotecas como Gson (para JSON) ou usar a classe String.join() e String.split() de forma mais controlada para CSV. Esses formatos são mais padronizados, legíveis por outros sistemas e facilitam a integração com ferramentas externas.
